@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Otabek Khusinov's links</title>
   
@@ -9,9 +10,18 @@
     * {
       border: thin blue solid;
     }
+    html {
+      min-height: 100%;
+    }
     body {
+      min-height: 100%;
       padding-top: 40px;
       padding-bottom: 40px;
+      background: linear-gradient(270deg, #e4f6f8, #e2f7f9, #e0f9fa, #defafc, #dcfbfd, #d9fcfd, #d7fefe, #d5ffff);
+      color: rgba(20, 73, 212, 1.0);
+    }
+    a {
+      color: rgba(20, 73, 212, 1.0);
     }
   
   .avatar-image {
@@ -27,6 +37,40 @@
     object-fit: cover;
     border-radius: 48px;
   }
+
+  .main-container {
+    max-width: 640px;
+    margin: auto;
+  }
+
+  .item {
+    background-color: rgba(231, 249, 240, 0.8);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .name-row {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .image-row {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .social-icons-row {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .link-text {
+    text-align: center;
+    flex-grow: 1;
+  }
+  
   </style>
 </head>
 
@@ -62,7 +106,7 @@
       <div class="item">
         <img class="thumbnail" src="/thumbnails/chess.png" alt="Restructuring Interviews">
 
-        <a href="https://restructuringinterviews.com/" target="_blank">
+        <a class="link-text" href="https://restructuringinterviews.com/" target="_blank">
           Restructuring Interviews Prep
         </a>        
       </div>
@@ -70,7 +114,7 @@
       <div class="item">
         <img class="thumbnail" src="/thumbnails/paripassu.avif" alt="Pari Passu Newsletter">
 
-        <a href="https://restructuringnewsletter.com/" target="_blank">
+        <a class="link-text" href="https://restructuringnewsletter.com/" target="_blank">
           Pari Passu Newsletter
         </a>        
       </div>
@@ -78,7 +122,7 @@
       <div class="item">
         <img class="thumbnail" src="/thumbnails/petition.png" alt="Petition Newsletter">
 
-        <a href="https://petition.substack.com/" target="_blank">
+        <a class="link-text" href="https://petition.substack.com/" target="_blank">
           Petition Newsletter
         </a>
       </div>
@@ -86,7 +130,7 @@
       <div class="item">
         <img class="thumbnail" src="/thumbnails/oaktree.png" alt="Howard Marks Memos">
 
-        <a href="https://www.oaktreecapital.com/insights" target="_blank">
+        <a class="link-text" href="https://www.oaktreecapital.com/insights" target="_blank">
           Howard Marks Memos
         </a>
       </div>
